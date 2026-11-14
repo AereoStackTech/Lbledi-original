@@ -1,0 +1,6 @@
+{
+  "name": "Lbledi original — Cuisine Beldia & Ftour à Safi",
+  "description": "Vitrine culinaire de Lbledi original à Safi (7QJC+CCJ) : Ftour Beldi matinal dès 09h15, tajines mijotés, couscous du vendredi et réservation directe sur WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

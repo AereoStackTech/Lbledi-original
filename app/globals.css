@@ -1,0 +1,63 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --color-terracotta-clay: #9E472A;
+  --color-terracotta-deep: #7A341D;
+  --color-olive-beldi: #4A5D23;
+  --color-saffron-warm: #D9822B;
+  --color-parchment-cream: #FBF8F3;
+  --color-parchment-stone: #F3EDE2;
+  --color-ink-espresso: #231B16;
+  --color-ink-muted: #5C4E44;
+  --color-whatsapp: #1F9D55;
+  --color-whatsapp-hover: #178244;
+
+  --font-display: var(--font-lora), Georgia, serif;
+  --font-sans: var(--font-jakarta), system-ui, -apple-system, sans-serif;
+  --font-arabic: var(--font-cairo), system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-parchment-cream);
+    color: var(--color-ink-espresso);
+  }
+
+  body {
+    background-color: var(--color-parchment-cream);
+    color: var(--color-ink-espresso);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+
+  [dir="rtl"] body,
+  [dir="rtl"] h1,
+  [dir="rtl"] h2,
+  [dir="rtl"] h3,
+  [dir="rtl"] .font-display {
+    font-family: var(--font-arabic);
+  }
+}
+
+.zellige-hairline {
+  background-image:
+    linear-gradient(45deg, rgba(158, 71, 42, 0.045) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(158, 71, 42, 0.045) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(74, 93, 35, 0.04) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(74, 93, 35, 0.04) 75%);
+  background-size: 28px 28px;
+  background-position: 0 0, 0 14px, 14px -14px, -14px 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
